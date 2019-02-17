@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h1,h2 ,h3 {
+	font-family: Verdana, sans-serif;
+}
+
+
+
+.h1-container {
+	background: #f1f1f1;
+	border-bottom: 2px solid #dadada;
+}
+
+.header-title {
+	padding: 50px 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+nav {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+nav ul {
+	padding: 0px;
+}
+
+nav li {
+	list-style: none;
+	font-family: Verdana, sans-serif;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #333;
+	padding: 20px;
+	display: block;
+	padding-right: 40px;
+}
+
+nav li a:hover {
+	text-decoration: none;
+	color: #999;
+}
+
+.container {
+	display: flex;
+	justify-content: flex-start;
+}
+
+img {
+	width: 100%;
+}
+
+
+
+
+
+p {
+	margin-top: 20px;
+	font-family: Verdana, sans-serif;
+	color: rgba(42, 44, 44, 0.486);
+}
+
+.logo {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.logo>li {
+	list-style: none;
+	flex-basis: 25%;
+}
+
+.logo li img {
+	max-width: 100px;
+	padding: 20px;
+}
+
+.map {
+	background-size: initial;
+}
+
+.f-topics {
+	color: white;
+	background-color: #7951e7;
+}
+
+.f-topics p {
+	color: white;
+}
+
+.f-container {
+	padding: 75px;
+}
+
+footer {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.footer-nav li {
+	list-style: none;
+	font-family: Verdana, sans-serif;
+	border-bottom: 1px solid rgb(131, 29, 248);
+	padding: 20px;
+}
+
+
+.flex-container {
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.column1,
+.column2 {
+	padding: 50px 20px;
+}
+
+.column1 {
+	order: 1;
+	padding-left: 50px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+	.container {
+		display: block;
+	}
+
+	.flex-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.order-mobie-0 {
+		order: 0;
+	}
+
+	.column1 {
+		padding-left: 20px;
+	}
+
+	.logo>li {
+		list-style: none;
+		flex-basis: 25%;
+		min-width: 200px;
+		margin: 5px auto;
+		text-align: center;
+	}
+	footer {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		flex-direction: column;
+	}
+	footer h3{
+		margin-top: 50px;
+	}
+}
