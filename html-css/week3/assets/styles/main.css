@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+ul{
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-end;
+}
+ul li{
+    list-style: none;
+    padding: 0px 40px;
+    
+}
+ul li a{
+    
+    text-decoration: none;
+
+
+  
+}
+
+ul li a:hover{
+    color: #999;
+    
+    
+}
+.heading{
+    margin: 0 auto;
+    padding: 50px;
+}
+p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+body{
+    padding: 40px;
+    margin: 0 100px;
+    border: 2px solid #333; 
+}
+main{
+    padding: 50px;
+    font-family: Verdana, sans-serif;
+
+}
+.form-title{
+    font-weight: bold;
+}
+progress{
+    width: 100%;
+    height:24px;
+}
+.signup_box{
+    display: flex;
+    flex-flow:column wrap;
+    align-items: stretch;
+    max-width: 1200px;
+    width: 50%;
+}
+.signup_box label{
+    padding: 20px 0px;
+}
+.signup_box label+input{
+    padding: 10px 0px;
+}
+.select_country_name select{
+    width: 100%;
+    height: 40px;
+
+}
+#short_description{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 10px; 
+    font-style: italic;
+}
+input[type=checkbox]:checked ~ div.shipping_address {
+    display: none;
+}
+.shipping_address{
+    display: flex;
+    flex-flow:column wrap;
+    align-items: stretch;
+    max-width: 1200px;
+    width: 50%;
+}
+.shipping_address label{
+    padding: 20px 0px;
+}
+.shipping_address label+input{
+    padding: 10px 0px;
+}
+button{
+    float: right;
+    border: 2px solid;
+    color: #555;
+    
+}
+.items-list{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+}

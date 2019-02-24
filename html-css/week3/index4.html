@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Custom Tailor - signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/styles/main.css" />
+  </head>
+  <body>
+          <header class="page__header">
+            <p>
+              <img src="./assets/img/logo.jpg" alt="">
+            </p>
+              <ul class="nav">
+                <li><a href="index.html">Step 1</a></li>
+                <li><a href="index2.html">Step 2</a></li>
+                <li><a href="index3.html">Step 3</a></li>
+                <li><a href="index4.html">Step 4</a></li>
+              </ul>
+              <h1 class="page__header-title">
+              Sign upto yourcustomtailor.com
+              </h1>
+             
+          </header>
+          <!-- Header Ends here -->
+
+       <main class="page__main">
+
+           <form action="signup" method="POST" class="form">
+
+              <hi class="form-title">
+                  Step 4/4 - Payment
+                </hi>
+
+                <progress value="4" max="4"></progress>
+                <p>
+                    Please fill in your payment data
+                </p>
+                <div class="signup_box">
+                <label for="sign--name-on-card">Name on card</label>
+                <input 
+                type="name-on-card" 
+                id="sign--name-on-card" 
+                name="name-on-card" >
+                <!-- End name-of-card -->
+
+                <label for="sign--card">Card type</label>
+                <span class="select_card_type">
+                  <select id="Card" name="Card">
+                  <option value="master_card">Master card</option>
+                  <option value="visa_card">Visa card</option>
+                  <option value="dankort">Dankort</option>
+                </select>
+            </span>
+                <!-- End card-type -->
+                
+                <label for="sign--credit_card_number">Credit card number</label>
+                <input 
+                type="number" 
+                id="sign--credit_card_number" 
+                name="credit_card_number" >
+                <!-- End credit_card_number -->
+
+                <label for="sign--first_name">First name</label>
+                <input 
+                type="first_name" 
+                id="sign--first_name" 
+                name="first_name" >
+                <!-- End first_name -->
+
+                <label for="sign--expiry_month">Expiry month</label>
+                <span class="select_expiry_month">
+                  <select id="expiry_month" name="expiry_month">
+                  <option value="January">Jan</option>
+                  <option value="February">Feb</option>
+                  <option value="March">Mar</option>
+                  <option value="April">Apr</option>
+                  <option value="May">May</option>
+                  <option value="June">Jun</option>
+                  <option value="July">Jul</option>
+                  <option value="August">Aug</option>
+                  <option value="September">Sep</option>
+                  <option value="October">Oct</option>
+                  <option value="November">Nov</option>
+                  <option value="December">Dec</option>
+                </select>
+            </span>
+                <!-- End expiry_month -->
+
+                <label for="sign--expiry_year">Expiry year</label>
+                <span class="select_expiry_year">
+                  <select id="expiry_year" name="expiry_year">
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                </select>
+            </span>
+                <!-- End expiry_year -->
+
+                <label for="sign--ccv">CCV</label>
+                <input 
+                type="number" 
+                id="sign--ccv" 
+                name="ccv" >
+                <!-- End CCV -->
+              </div>
+
+                <button type="button">Next step</button>
+           </form>
+
+    </main>
+  </body>
+</html>
