@@ -11,7 +11,6 @@
    <body>
       <header class="page__header">
          <div class="logo_nav">
-            <section>
                <p>
                   <img src="./assets/img/logo.jpg" alt="">
                </p>
@@ -21,10 +20,8 @@
                   <li><a href="index3.html">Step 3</a></li>
                   <li><a href="index4.html">Step 4</a></li>
                </ul>
-            </section>
          </div>
          <div class="heading">
-            <section>
                <h1 class="page__header-title">
                   Sign upto yourcustomtailor.com
                </h1>
@@ -37,15 +34,14 @@
                   are busy picking the best offers that match your preferences and style. Every 
                   week we will send you a hand-picked selection - we just need to know a few details about your first...
                </p>
-            </section>
          </div>
       </header>
       <!-- Header Ends here -->
       <main class="page__main">
          <form action="signup" method="POST" class="form">
-            <hi class="form-title">
+            <h1 class="form-title">
                Step 1/4 - tell us who you are?
-            </hi>
+            </h1>
             <div class="progress-bar">
                <progress value="1" max="4"></progress>
             </div>
@@ -98,7 +94,7 @@
                <!-- End country_name -->
                <label for="sign--street_address">Street address*</label>
                <input 
-                  type="address" 
+                  type="text" 
                   id="sign--street_address" 
                   name="street_address" >
                <!-- End street_address -->
@@ -110,24 +106,24 @@
                <!-- End post_code -->
                <label for="sign--profile_description">Profile description</label>
                <p id="short_description">please provide a short description of yourself to be displayed on our social community pages.</p>
-               <textarea name="" id="" cols="30" rows="10"></textarea>
+               <textarea name="comment" cols="30" rows="10"></textarea>
             </div>
             <p>
                Use the same address for billing and shipping? Uncheck below to fill out a separate shipping address.
             </p>
             <label>
                Shipping address<input type="checkbox" checked/>
-               <div class="shipping_address">
+               <span class="shipping_address">
             <label for="sign--first_name">First Name*</label>
             <input 
                type="text" 
-               id="sign--first_name" 
+               id="sign-first_name" 
                name="first_name" >
             <!-- End first_name -->
             <label for="sign--last_name">Last Name*</label>
             <input 
                type="text" 
-               id="sign--last_name" 
+               id="sign-last_name" 
                name="last_name" >
             <!-- End last_name -->
             <label for="country">Country*</label>
@@ -164,20 +160,20 @@
             </select>
             </span>
             <!-- End country_name -->
-            <label for="sign--street_address">Street address*</label>
+            <label for="sign-street_address">Street address*</label>
             <input 
-               type="address" 
-               id="sign--street_address" 
+               type="text" 
+               id="sign-street_address" 
                name="street_address" >
             <!-- End street_address -->
             <label for="sign--post_code">Post code*</label>
             <input 
                type="text" 
-               id="sign--post_code" 
+               id="sign-post_code" 
                name="post_code" >
             <!-- End post_code -->
             </label>
-            </div>
+         </span>
             <button type="button"><a href="index2.html">Next step</a></button>
          </form>
       </main>
