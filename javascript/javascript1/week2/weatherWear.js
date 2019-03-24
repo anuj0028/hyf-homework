@@ -1,4 +1,4 @@
-function weatherWear(temp){
+function getClothesByWeather(temp){
     if (temp<8){
         return "jacket, trousers and sweater";
     }
@@ -12,4 +12,4 @@ function weatherWear(temp){
     return "shorts and T-shirts";
   }
 }
-console.log(weatherWear(19));
+console.log(getClothesByWeather(19));
