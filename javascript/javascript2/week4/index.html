@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Favourite Books</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+
+</head>
+
+<body>
+
+
+
+</body>
+<script>
+
+function heading() {
+       var header = document.createElement('h1');
+       var title = document.createTextNode('My favourite books');
+       header.appendChild(title);
+       document.body.appendChild(header);
+    }
+    heading();
+   
+    const bookObj = [{
+        id: "the_book_thief",
+        title: "The Book Thief",
+        language: "English",
+        author: "J.K. Rowling",
+        img: "images/the_book_thief.jpg"
+    }, {
+        id: "the_kite_runner",
+        title: "The Kite Runner",
+        language: "English",
+        author: "Khaled Hosseini",
+        img: "images/kite_runner.jpg"
+    }, {
+        id: "twilight",
+        title: "Twilight",
+        language: "English",
+        author: "Stephenie Meyer",
+        img: "images/twilight.jpg"
+    }, {
+        id: "the_time_travellers_wife",
+        title: "The Time Traveller's Wife",
+        language: "English",
+        author: "Audrey Niffenegger",
+        img: "images/travelers_wife.jpg"
+    }, {
+        id: "life_of_pi",
+        title: "Life of Pi",
+        language: "English",
+        author: "Yann Martel",
+        img: "images/life_of_pie.jpg"
+    }, {
+        id: "the_hunger_games",
+        title: "The Hunger Games",
+        language: "English",
+        author: "Suzanne Collins",
+        img: "images/hunger_games.jpg",
+    }, {
+        id: "the_help",
+        title: "The Help",
+        language: "English",
+        author: "Kathryn Stockett",
+        img: "images/the_help.jpg"
+    }, {
+        id: "the_da_vinci_code",
+        title: "The Da Vinci Code",
+        language: "English",
+        author: "Dan Brown",
+        img: "images/vinci_code.jpg"
+    }, {
+        id: "the_road",
+        title: "The Road",
+        language: "English",
+        author: "Cormac McCarthy",
+        img: "images/the_road.jpg"
+    }, {
+        id: "the_secret_life_of_bees",
+        title: "The Secret Life of Bees",
+        language: "English",
+        author: "Sue Monk Kidd",
+        img: "images/secret_life_of_bees.jpg"
+    }, ]
+    
+    function bookObject() {
+        for (i = 0; i < bookObj.length; i++) {
+            let h2 = document.createElement('h2');
+            h2.innerHTML = bookObj[i].title;
+            document.body.appendChild(h2);
+
+            let h3 = document.createElement('h3');
+            h3.innerHTML = bookObj[i].language;
+            document.body.appendChild(h3);
+
+            h3 = document.createElement('h3');
+            h3.innerHTML = bookObj[i].author;
+            document.body.appendChild(h3);
+
+            let img = document.createElement('img');
+            img.src = bookObj[i].img;
+            document.body.appendChild(img);
+        }   
+    }
+    bookObject();
+</script>
+
+</html>

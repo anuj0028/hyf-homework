@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 20px;
+    padding: 30px;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+h1 {
+    color: rgb(2, 222, 138);
+    text-align: center;
+}
+h2 {
+    color: blue;
+}
+h3 {
+    color: rgb(156, 107, 33);
+}
+img {
+    width: 65%;
+    height: 400px;
+    margin-bottom: 40px;
+    padding-left: 35%;
+}
+input {
+    margin: 30px;
+    padding: 15px;
+}
